@@ -127,16 +127,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Graphics.cpp" />
-    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="d3dclass.cpp" />
+    <ClCompile Include="graphics.cpp" />
+    <ClCompile Include="input.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="System.cpp" />
+    <ClCompile Include="system.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Graphics.h" />
-    <ClInclude Include="Input.h" />
+    <ClInclude Include="d3dclass.h" />
+    <ClInclude Include="graphics.h" />
+    <ClInclude Include="input.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="System.h" />
+    <ClInclude Include="system.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="MyDirectXEngine.rc" />
