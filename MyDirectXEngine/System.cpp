@@ -42,16 +42,13 @@ void System::InitializeWindow()
 	int screenWidth = GetSystemMetrics(SM_CXSCREEN);
 	int screenHeight = GetSystemMetrics(SM_CYSCREEN);
 
-	if (m_screenWidth > screenWidth)
-		m_screenWidth = screenWidth;
-	if (m_screenHeight > screenHeight)
-		m_screenHeight = screenHeight;
-
 	DEVMODE devScreenSettings = { 0 };
 	int posX = 0;
 	int posY = 0;
 
 	if (FULLSCREEN) {
+		m_screenWidth = screenWidth;
+		m_screenHeight = screenHeight;
 		devScreenSettings.dmSize = sizeof(devScreenSettings);
 		devScreenSettings.dmPelsWidth = (unsigned long)m_screenWidth;
 		devScreenSettings.dmPelsHeight = (unsigned long)m_screenHeight;
@@ -61,6 +58,10 @@ void System::InitializeWindow()
 		ChangeDisplaySettings(&devScreenSettings, CDS_FULLSCREEN);
 	}
 	else {
+		if (m_screenWidth > screenWidth)
+			m_screenWidth = screenWidth;
+		if (m_screenHeight > screenHeight)
+			m_screenHeight = screenHeight;
 		posX = (GetSystemMetrics(SM_CXSCREEN) - m_screenWidth) / 2;
 		posY = (GetSystemMetrics(SM_CYSCREEN) - m_screenHeight) / 2;
 	}

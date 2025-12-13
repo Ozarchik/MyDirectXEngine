@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="application.cpp" />
     <ClCompile Include="d3dclass.cpp" />
     <ClCompile Include="graphics.cpp" />
     <ClCompile Include="input.cpp" />
@@ -134,6 +135,7 @@
     <ClCompile Include="system.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="application.h" />
     <ClInclude Include="d3dclass.h" />
     <ClInclude Include="graphics.h" />
     <ClInclude Include="input.h" />

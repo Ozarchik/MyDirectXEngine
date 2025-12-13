@@ -1,5 +1,7 @@
+#define WIN32_LEAN_AND_MEAN
 #include <windows.h>
 #include "system.h"
+
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hprevInstance, PSTR pScmdLine, int iCmdShow)
 {

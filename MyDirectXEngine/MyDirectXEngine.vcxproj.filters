@@ -30,6 +30,9 @@
     <ClCompile Include="d3dclass.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="application.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="system.h">
@@ -45,6 +48,9 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="d3dclass.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="application.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

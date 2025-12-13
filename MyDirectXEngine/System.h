@@ -3,10 +3,9 @@
 #include <windows.h>
 #include <memory>
 
+#include "application.h"
 #include "graphics.h"
 #include "input.h"
-
-#define FULLSCREEN true
 
 class System
 {
