@@ -26,3 +26,8 @@ void Graphics::Render()
 
 	m_directx->EndScene();
 }
+
+void Graphics::setFullscreen(bool state)
+{
+	m_directx->setFullscreen(state);
+}

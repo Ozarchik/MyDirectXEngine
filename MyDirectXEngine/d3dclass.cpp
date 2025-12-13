@@ -1,9 +1,7 @@
 #include "D3DClass.h"
 #include <DirectXMath.h>
+#include "globals.h"
 
-#define VERIFY(result, failMessage) if(FAILED(result)) throw failMessage
-#define DOZERO(structure) ZeroMemory(&structure, sizeof(structure))
-#define STRUCT(TYPE, NAME) TYPE NAME; DOZERO(NAME)
 
 D3DClass::D3DClass(HWND hwnd, int screenWidth, int screenHeight, int screenNear, int screenFar, bool vsync, bool fullscreen)
 	: m_vsync(vsync)
@@ -261,6 +259,11 @@ std::string D3DClass::GetGPUName() const
 {
 	std::string result(m_gpuDescription, sizeof(m_gpuDescription));
 	return result;
+}
+
+void D3DClass::setFullscreen(bool state)
+{
+	m_swapChain->SetFullscreenState(state, NULL);
 }
 
 

@@ -10,6 +10,7 @@ public:
 	Graphics(HWND hwnd, int screenWidth, int screenHeight);
 	~Graphics();
 	void Render();
+	void setFullscreen(bool state);
 
 private:
 	HWND m_hwnd;

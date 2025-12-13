@@ -37,7 +37,7 @@ public:
 
 	int GetGPUMemory() const;
 	std::string GetGPUName() const;
-
+	void setFullscreen(bool state);
 
 private:
 	bool m_vsync;

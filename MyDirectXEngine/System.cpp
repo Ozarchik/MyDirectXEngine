@@ -112,6 +112,13 @@ void System::Run()
 			done = true;
 		}
 
+		if (m_input->IsKeyUp(VK_F2)) {
+			static bool fullscreen = false;
+			fullscreen = !fullscreen;
+			m_graphics->setFullscreen(fullscreen);
+			m_input->KeyDown(VK_F2);
+		}
+
 		m_graphics->Render();
 	}
 }
