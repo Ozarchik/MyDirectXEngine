@@ -18,8 +18,8 @@ public:
 		HWND hwnd,
 		int screenWidth,
 		int screenHeight,
-		int screenNear,
-		int screenFar,
+		float screenNear,
+		float screenFar,
 		bool vsync,
 		bool fullscreen
 	);

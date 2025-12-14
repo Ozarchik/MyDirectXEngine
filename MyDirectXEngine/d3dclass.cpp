@@ -3,7 +3,7 @@
 #include "globals.h"
 
 
-D3DClass::D3DClass(HWND hwnd, int screenWidth, int screenHeight, int screenNear, int screenFar, bool vsync, bool fullscreen)
+D3DClass::D3DClass(HWND hwnd, int screenWidth, int screenHeight, float screenNear, float screenFar, bool vsync, bool fullscreen)
 	: m_vsync(vsync)
 {
 	IDXGIFactory* factory = nullptr;
@@ -211,7 +211,7 @@ D3DClass::~D3DClass()
 
 void D3DClass::BeginScene(float x, float y, float z, float w)
 {
-	float color[4]{ 1.0, 0.7, 0.5, 1.0 };
+	float color[4]{ 0.1, 0.1, 0.1, 1.0 };
 	m_deviceContext->ClearRenderTargetView(m_renderTargetView, color);
 	m_deviceContext->ClearDepthStencilView(m_depthStencilView, D3D11_CLEAR_DEPTH, 1.0f, 0);
 }

@@ -9,9 +9,9 @@ using namespace DirectX;
 class ColorShader
 {
 	struct Matrix {
-		XMMATRIX world;
-		XMMATRIX view;
-		XMMATRIX projection;
+		XMFLOAT4X4 world;
+		XMFLOAT4X4 view;
+		XMFLOAT4X4 projection;
 	};
 
 public:
